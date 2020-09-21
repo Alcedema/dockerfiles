@@ -3,7 +3,7 @@
 #
 
 FROM alpine
-MAINTAINER kev <noreply@easypi.pro>
+MAINTAINER jpdsc <noreply@jpdsc.eu>
 
 RUN set -xe \
     && apk add --no-cache ca-certificates \
