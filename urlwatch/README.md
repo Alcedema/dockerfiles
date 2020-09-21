@@ -45,7 +45,7 @@ Here you can change the configuration of urlwatch. Consult the documentation in 
 
 
 ## Cron
-By default, 30 minutes CRON is added. To change, use "crontab -e" to edit the current CRON.
+By default, 30 minutes CRON is added. To change, use "crontab -e" and edit the line.
 
 ## References
 
