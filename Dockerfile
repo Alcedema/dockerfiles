@@ -16,7 +16,7 @@ RUN set -xe \
                           openssl-dev     \
                           python3         \
                           python3-dev     \
-						  py3-pip		  \
+			  py3-pip	  \
     && python3 -m pip install appdirs   \
                               cssselect \
                               keyring   \
