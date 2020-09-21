@@ -19,7 +19,7 @@ Configure the URLs in this file. The file can be found in
 ```
 /root/.urlwatch
 ```
-If the file idoes not exist; create it inside the above folder. Example below on the contents.
+If the file idoes not exist; create it inside the above folder or download it here: https://github.com/jpdsceu/dockerfiles/blob/master/urlwatch/files/urls.yaml. Example below on the contents.
 
 ```
 ---
@@ -40,7 +40,7 @@ filter:
 ```
 
 ## urlwatch.yaml
-This file is generated after the first CRON ran (30 minutes).
+This file is generated after the first CRON ran (30 minutes) or downloaded here: https://github.com/jpdsceu/dockerfiles/blob/master/urlwatch/files/urlwatch.yaml
 Here you can change the configuration of urlwatch. Consult the documentation in the reference section for explanation.
 
 
