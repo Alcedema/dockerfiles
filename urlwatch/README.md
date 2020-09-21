@@ -52,3 +52,5 @@ I will most likely remove the automated cron and add the information in the READ
 ## References
 
 Documentation: https://urlwatch.readthedocs.io/
+
+Developer and all credits to: https://thp.io/2008/urlwatch/
