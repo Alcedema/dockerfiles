@@ -46,6 +46,8 @@ Here you can change the configuration of urlwatch. Consult the documentation in 
 
 ## Cron
 By default, 30 minutes CRON is added. To change, use "crontab -e" and edit the line.
+Keep in mind that when updating the image; the original CRON is used. If you have changed crontab do not forget to change it back.
+I will most likely remove the automated cron and add the information in the README.md file.
 
 ## References
 
