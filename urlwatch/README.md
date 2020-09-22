@@ -23,19 +23,15 @@ If the file idoes not exist; create it inside the above folder or download it he
 
 ```
 ---
-
 url: "https://github.com/thp/urlwatch/releases/latest"
 filter:
 - xpath: '(//div[contains(@class,"release-timeline-tags")]//h4)[1]/a'
 - html2text: re
-
 ---
-
 url: "https://github.com/shadowsocks/shadowsocks-libev/releases/latest"
 filter:
 - css: 'div.f1>a'
 - html2text: re
-
 ---
 ```
 
