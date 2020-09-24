@@ -25,6 +25,7 @@ RUN set -xe \
                               pyyaml    \
                               requests  \
                               chump     \
+			      pyppeteer \
                               urlwatch  \
     && apk del build-base  \
                libffi-dev  \
@@ -33,6 +34,7 @@ RUN set -xe \
                openssl-dev \
                python3-dev \
     && echo '*/30 * * * * cd /root/.urlwatch && urlwatch --urls urls.yaml --config urlwatch.yaml --hooks hooks.py --cache cache.db' | crontab -
+    && pyppeteer-install
 
 VOLUME /root/.urlwatch
 WORKDIR /root/.urlwatch
