@@ -2,6 +2,29 @@
 
 urlwatch is intended to help you watch changes in webpages and get notified (via e-mail, in your terminal or through various third party services) of any changes. The change notification will include the URL that has changed and a unified diff of what has changed.
 
+## Current version
+
+```
+21/12/2020
+2.22
+- Added 'wait_until' option to browser jobs to configure how long
+  the headless browser will wait for pages to load.
+- Jobs now have an optional `treat_new_as_changed` (default `false`)
+  key that can be set, and will treat newly-found pages as changed,
+  and display a diff from the empty string (useful for `diff_tool`
+  or `diff_filter` with side effects)
+- New reporters: `discord`, `mattermost`
+- New key `user_visible_url` for URL jobs that can be used to show
+  a different URL in reports (useful if the watched URL is a REST API
+  endpoint, but the report should link to the corresponding web page)
+- The Markdown reporter now supports limiting the report length via the
+  `max_length` parameter of the `submit` method. The length limiting logic is
+  smart in the sense that it will try trimming the details first, followed by
+  omitting them completely, followed by omitting the summary. If a part of the
+  report is omitted, a note about this is added to the report. (PR#572, by
+  Denis Kasak)
+```
+
 ## Docker-compose
 
 ```
