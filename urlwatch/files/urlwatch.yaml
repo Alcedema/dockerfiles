@@ -8,6 +8,12 @@ job_defaults:
   shell: {}
   url: {}
 report:
+  discord:
+    embed: false
+    enabled: false
+    max_message_length: 2000
+    subject: '{count} changes: {jobs}'
+    webhook_url: ''
   email:
     enabled: false
     from: ''
@@ -47,6 +53,10 @@ report:
     enabled: false
     homeserver: ''
     room_id: ''
+  mattermost:
+    enabled: false
+    max_message_length: 40000
+    webhook_url: ''
   pushbullet:
     api_key: ''
     enabled: false
@@ -59,6 +69,7 @@ report:
     user: ''
   slack:
     enabled: false
+    max_message_length: 40000
     webhook_url: ''
   stdout:
     color: true
