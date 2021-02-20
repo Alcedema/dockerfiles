@@ -17,7 +17,7 @@ RUN apk add --no-cache \
   py3-pip
 
 RUN pip install --upgrade pip \
-  && pip install 'cryptography<=3'  \
+  && pip install 'cryptography<=3' \
   appdirs \
   cssselect \
   keyring \
