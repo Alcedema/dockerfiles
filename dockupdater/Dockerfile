@@ -1,1 +1,0 @@
-FROM dockupdater/dockupdater
