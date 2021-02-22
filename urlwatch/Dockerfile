@@ -14,7 +14,8 @@ RUN apk add --no-cache \
   openssl-dev \
   python3 \
   python3-dev \
-  py3-pip
+  py3-pip \
+  nano
 
 RUN pip install --upgrade pip \
   && pip install 'cryptography<=3' \
